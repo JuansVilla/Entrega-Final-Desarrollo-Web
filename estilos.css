@@ -1,0 +1,218 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+header{
+    height: 80px;
+    background-color: #dcdcdc;
+    padding: 20px;
+    font-size: 20px;
+    color: grey;
+    border-bottom: solid black;
+}
+
+.logo{
+    float: left;
+}
+
+.logo span{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu a{
+    text-decoration: none;
+    color: grey;
+}
+
+.menu a:hover{
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+    background-color: beige;
+}
+
+main{
+    width: auto;
+    background-color: black;
+    background-image:url(img/marble-2371776_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile{
+    display: inline-block;
+    
+}
+
+.proft{
+    float: right;
+    margin-top: 40px;
+}
+
+h1, h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.profile p{
+    float: left;
+    padding: 10px;
+}
+
+.profile img{
+    width: 80%;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 20%
+}
+
+.gal{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.grid-container-gal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card:hover{
+    box-shadow: 5px 10px 10px darkgray;
+    text-decoration: underline;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: 260px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+footer{
+    text-align: center;
+    color: black;
+    background-color: #dcdcdc;
+    border-top: solid black;
+}
+
+.redes{
+    font-size: 40px;
+    padding-top: 2px;
+}
+
+.redes a{
+    color: black;
+    font-size: 30px;
+}
+
+.con{
+    padding-top: 30px;
+}
+
+.conimg{
+    padding-bottom: 10px;
+}
+
+.con p{
+    padding-bottom: 10px;
+}
+
+.con h3{
+    padding-bottom: 10px;
+}
+
+label{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    html{
+        min-height: 100%;
+    }
+    body{
+        min-height: 100%;
+    }
+    .grid-container-gal{
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        flex-basis: 100%;
+    }
+    .profile img{
+        height: 300px;
+        padding-top: 15px;
+        padding-left: 20%;
+        float: none;
+    }
+
+    .proft{
+        width: 0%;
+        float: none;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        
+    }
+    .footer{
+        margin-top: auto;
+    }
+}
+@media (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: medium;
+    }
+    .grid-container-gal{
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .profile img{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        padding-top: 20px;
+    }
+}
