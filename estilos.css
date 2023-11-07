@@ -48,6 +48,23 @@ header{
     background-color: beige;
 }
 
+.carousel-inner img {
+    margin: auto;
+    height: 0;
+  }
+
+  .carousel-item {
+    position: contain !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .carousel-item img {
+    height: auto;
+    object-fit: contain;
+  }
 main{
     width: auto;
     background-color: black;
@@ -194,6 +211,12 @@ textarea{
         padding-bottom: 25px;
         
     }
+
+    .carousel-inner img {
+        margin: auto;
+        height: auto;
+        width: 75%;
+      }
     .footer{
         margin-top: auto;
     }
@@ -215,4 +238,10 @@ textarea{
         align-items: center ;
         padding-top: 20px;
     }
+
+    .carousel-inner img {
+        margin: auto;
+        height: auto;
+        width: 100%;
+      }
 }
