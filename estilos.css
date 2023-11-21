@@ -1,3 +1,355 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  height: 100%;
+}
+
+header {
+  height: 80px;
+  background-color: #dcdcdc;
+  padding: 20px;
+  font-size: 20px;
+  color: grey;
+  border-bottom: solid black;
+}
+
+.logo {
+  float: left;
+}
+.logo span {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.menu {
+  float: right;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  color: grey;
+}
+.menu a:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+  background-color: beige;
+}
+
+.carousel-inner img {
+  margin: auto;
+  height: 0;
+  margin: auto;
+  height: auto;
+  width: 75%;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.carousel-item {
+  position: contain !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.carousel-item img {
+  height: auto;
+  object-fit: contain;
+}
+
+main {
+  width: auto;
+  background-color: black;
+  background-image: url(img/marble-2371776_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.profile {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  flex-basis: 100%;
+}
+.profile p {
+  float: left;
+  padding: 10px;
+}
+.profile img {
+  width: 80%;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 20%;
+  height: 300px;
+  padding-top: 15px;
+  padding-left: 20%;
+  float: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.proft {
+  float: right;
+  margin-top: 40px;
+  width: 0%;
+  float: none;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+h1, h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.gal {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+.grid-container-gal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 5px 10px 10px darkgray;
+  text-decoration: underline;
+}
+.card img {
+  width: 100%;
+  height: 260px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  background-color: #dcdcdc;
+  border-top: solid black;
+}
+
+.redes {
+  font-size: 40px;
+  padding-top: 2px;
+}
+.redes a {
+  color: black;
+  font-size: 30px;
+}
+
+.con {
+  padding-top: 30px;
+  width: 50vw;
+}
+.con p {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.con h3 {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+.con img{
+  width: 40vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.conimg {
+  padding-bottom: 10px;
+}
+
+label {
+  width: 100%;
+  padding-top: 30px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding-bottom: 30px;
+}
 
 /*# sourceMappingURL=estilos.css.map */
+
+form{
+  padding: 0px 20px;
+}
+.contMap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.map iframe{
+max-width: 100%;
+height: 500px;
+vertical-align: middle;
+padding: 20px;
+}
+
+.contConv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contMap h3{
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  html{
+      min-height: 100%;
+  }
+  body{
+      min-height: 100%;
+  }
+  .grid-container-gal{
+      grid-template-columns: repeat(2, 1fr)
+  }
+  .profile{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      flex-basis: 100%;
+  }
+  .profile img{
+      height: 300px;
+      padding-top: 15px;
+      padding-left: 20%;
+      float: none;
+  }
+
+  .proft{
+      width: 0%;
+      float: none;
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 25px;
+  }
+
+  .carousel-inner img {
+      margin: auto;
+      height: auto;
+      width: 75%;
+    }
+
+  .footer{
+      margin-top: auto;
+  }
+
+  .contMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map{
+    size-adjust: 400px;
+  }
+
+  .contConv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .con {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100vw;
+  }
+
+  .con img{
+    width: 90vw;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: medium;
+  }
+  .grid-container-gal{
+      grid-template-columns: repeat(1, 1fr)
+  }
+
+  .profile img{
+      display: flex;
+      justify-content: center;
+      align-items: center ;
+      padding-top: 20px;
+  }
+
+  .carousel-inner img {
+      margin: auto;
+      height: auto;
+      width: 100%;
+    }
+  
+  .map iframe{
+      max-width: 100%;
+      height: 300px;
+      }
+
+  .con img{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+}
