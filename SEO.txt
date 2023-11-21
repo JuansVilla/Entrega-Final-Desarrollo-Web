@@ -1,0 +1,13 @@
+Cambios Para La Mejora Del SEO
+
+- Completar los alt en las diferentes HTML 
+
+- Incorporar un Meta con la descripcion de la pagina 
+
+-Incorporar la etiqueta Meta con las Keywords
+
+-Agregar la Etiqueta Title
+
+-Correcciones a los textos y ortografia
+
+-Completar responsive en los 5 html con buen uso de los iframe y links
